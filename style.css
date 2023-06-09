@@ -1,37 +1,89 @@
 body {
-	background: #D9EBF3;
-	font-family: arial;
-	font-size: 16px;
-	color: #333;
+   background: #d9ebf3;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   color: #333;
 }
 
 #canvas {
-	border: 1px solid;
-	width: 500px;
+   border: 1px solid #333;
+   width: 500px;
+   border-radius: 8px;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 input {
-	display: block;
-	margin-top: 10px;
+   display: block;
+   margin-top: 10px;
+   border: none;
+   background-color: #333;
+   color: #fff;
+   padding: 5px 10px;
+   border-radius: 8px;
 }
 
-input:not([type="file"]) {
-	background: #DEC0C0;
-	border: 0;
-	padding: 8px 20px;
-	cursor: pointer;
+#btnRed {
+   background-color: #ed2b2a;
+   color: #fff;
 }
 
-input:not([type="file"]):hover {
-	background: #C79292;
+#btnGrey {
+   background-color: #526d82;
+   color: #fff;
+}
+
+#btnRainbow {
+   background-color: #00dfa2;
+   color: #fff;
+}
+
+#btnReset {
+   background-color: #40128b;
+   color: #fff;
+}
+
+input:not([type='file']) {
+   background: #dec0c0;
+   border: 0;
+   padding: 8px 20px;
+   cursor: pointer;
+   border-radius: 8px;
+}
+
+input:not([type='file']):hover {
+   background: #c79292;
 }
 
 .filters input {
-	display: inline-block;
+   display: inline-block;
 }
 
 .nomarginbottom {
-	margin-bottom: 0;
+   margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+   #canvas {
+      width: 300px;
+   }
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .filters {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
 }
 
 /* Developed by Mohammad Kiaei */
